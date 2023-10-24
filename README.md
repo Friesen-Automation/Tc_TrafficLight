@@ -1,2 +1,2 @@
 # Tc_TrafficLight
-Ein Beispielprojekt um eine kurze auffrischung und Eifnhrung in Struktueirten Text zu geben. Unter der Verwendung von Enumerationen.
+Ein Beispielprojekt um eine kurze Auffrischung und Einführung in Struktueirten Text zu geben, Unter der Verwendung von Enumerationen.
