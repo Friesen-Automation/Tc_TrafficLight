@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="DUT_AmpelConfig" Id="{5b2e8a0d-668f-46f3-a2ce-a0703933cda9}">
+    <Declaration><![CDATA[TYPE DUT_AmpelConfig :
+STRUCT
+	tRot		:TIME; // Zet für die Rotphase
+	tRotGelb	:TIME;	// Zeit für die RotGruenphase
+	tGruen		:TIME;	// Zeit für die Gruenpahse
+	tGelb		:TIME;	// Zeit für die Gelbphase
+	active		: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

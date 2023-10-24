@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="E_Step" Id="{4cb6b68d-8a9d-4afa-b8d3-4295433340ed}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_Step :
+(
+	START,
+	STOP,
+	DRILL_FWD,
+	DRILL_BWD,
+	FEED_IN,
+	FEED_OUT,
+	WAIT,
+	IN_END_POS
+	
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

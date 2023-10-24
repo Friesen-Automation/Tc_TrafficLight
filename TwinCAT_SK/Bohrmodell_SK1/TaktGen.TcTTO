@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Task Name="TaktGen" Id="{db2f4d09-8d7b-4bb0-9ef6-ac452a464845}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>10000</CycleTime>
+    <Priority>8</Priority>
+    <PouCall>
+      <Name>PRG_TaktGen</Name>
+    </PouCall>
+    <TaskFBGuid>{2e87c93b-eafc-4e3f-a931-95fafc00e7db}</TaskFBGuid>
+    <Fb_init>{704b37c1-d6b5-492a-a191-1a068bddab32}</Fb_init>
+    <Fb_exit>{f249cd13-cced-4167-b674-31f733c354a2}</Fb_exit>
+    <CycleUpdate>{8052e601-2ee6-48a1-9233-373278b7884d}</CycleUpdate>
+    <PostCycleUpdate>{500cc594-b74b-4b99-9fd3-530cd4d43e0e}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

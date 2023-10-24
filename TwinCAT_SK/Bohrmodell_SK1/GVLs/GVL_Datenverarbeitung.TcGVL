@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="GVL_Datenverarbeitung" Id="{a394760e-cb16-4387-a0d0-f3f11908765e}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL PERSISTENT
+	a_Einschaltvorgaenge_Antrieb : ARRAY[1..6] OF UINT;
+	a_Antriebe : ARRAY [1..6] OF DUT_Motordaten;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

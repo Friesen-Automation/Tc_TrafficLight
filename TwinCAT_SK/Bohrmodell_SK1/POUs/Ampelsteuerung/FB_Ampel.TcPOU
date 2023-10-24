@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Ampel" Id="{aaddba8e-ced5-4396-9c8c-6bc2ed214f5f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Ampel
+VAR_INPUT
+	btnReset	: BOOL;
+	btnActive	: BOOL;
+	bBlinktakt	: BOOL;
+	config	: DUT_AmpelConfig;
+END_VAR
+VAR_OUTPUT
+	LED_ROT	: BOOL;
+	LED_GELB:	BOOL;
+	LED_GRUEN: 	BOOL;
+END_VAR
+VAR
+	state	: E_AmpelPhase := E_AmpelPhase.INIT;
+	tRot	: TON;  // Leuchtdauer Rot
+	tRotGelb	: TON; // Leuchtdauer RotGelb
+	tGruen	: TON;		// Leuchtaduer Gruen
+	tGelb	: TON;		// Leuchtdauer Gelb
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+CASE state OF
+	E_AmpelPhase.INIT:
+			LED_ROT	:= FALSE;
+			LED_GELB := bBlinktakt;
+			LED_GRUEN := FALSE;
+	
+	E_AmpelPhase.ROT:
+			LED_ROT	:= TRUE;
+			LED_GELB := FALSE;
+			LED_GRUEN := FALSE;
+			IF tRot.Q THEN
+				state := E_AmpelPhase.ROTGELB;
+			END_IF
+			
+	E_AmpelPhase.ROTGELB:
+			LED_ROT	:= TRUE;
+			LED_GELB := TRUE;
+			LED_GRUEN := FALSE;
+			IF tRotGelb.Q THEN
+				state := E_AmpelPhase.GRUEN;
+			END_IF
+			
+	E_AmpelPhase.GRUEN:
+			LED_ROT	:= FALSE;
+			LED_GELB := FALSE;
+			LED_GRUEN := TRUE;
+			IF tGruen.Q THEN
+				state := E_AmpelPhase.GELB;
+			END_IF
+			
+	E_AmpelPhase.GELB:
+			LED_ROT	:= FALSE;
+			LED_GELB := TRUE;
+			LED_GRUEN := FALSE;
+			IF tGelb.Q THEN
+				state := E_AmpelPhase.ROT;
+			END_IF
+ELSE
+			LED_Gelb := bBlinktakt;
+			LED_ROT	:= FALSE;
+			LED_GRUEN := FALSE;
+END_CASE
+
+IF btnReset THEN
+	state := E_AmpelPhase.INIT;
+	ELSE ;
+END_IF
+
+IF btnActive AND (state = E_AmpelPhase.INIT) THEN
+	state := E_AmpelPhase.ROT;
+END_IF
+
+
+// Timer
+
+tRot(	IN:=(state = E_AmpelPhase.ROT),
+		PT := config.tRot);
+		
+tRotGelb(	IN:=(state = E_AmpelPhase.ROTGELB),
+		PT := config.tRotGelb);
+		
+tGruen(	IN:=(state = E_AmpelPhase.GRUEN),
+		PT := config.tGruen);
+
+tGelb(	IN:=(state = E_AmpelPhase.GELB),
+		PT := config.tGelb);
+		
+		
+		
+		]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Ampel">
+      <LineId Id="19" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="41" Count="1" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="56" Count="2" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="59" Count="5" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="72" Count="5" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="90" Count="0" />
+      <LineId Id="92" Count="5" />
+      <LineId Id="91" Count="0" />
+      <LineId Id="24" Count="0" />
+      <LineId Id="27" Count="2" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="39" Count="1" />
+      <LineId Id="51" Count="1" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="53" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="67" Count="0" />
+      <LineId Id="85" Count="0" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="86" Count="0" />
+      <LineId Id="88" Count="1" />
+      <LineId Id="80" Count="4" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

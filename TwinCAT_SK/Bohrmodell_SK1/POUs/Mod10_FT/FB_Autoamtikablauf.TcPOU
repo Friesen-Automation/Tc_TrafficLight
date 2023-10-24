@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Autoamtikablauf" Id="{b25e1179-6922-4cd1-9256-0109bffebbc5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Autoamtikablauf
+VAR_INPUT
+	i_BA_Auto : BOOL;
+	i_LT_Band_1 : BOOL;
+	i_LT_Band_3 : BOOL;
+	i_LT_Band_2 : BOOL;
+	i_Schalter_BW_Zur : BOOL;
+	i_Schalter_Bw_Vor : BOOL;
+	i_Wartezeit_Soll: TIME;
+	
+	i_Reset_Stueckzahl: BOOL;
+	i_Soll_Werstuecke: USINT;
+END_VAR
+VAR_OUTPUT
+		
+	o_Band_1 : BOOL;
+	o_Band_2 : BOOL;
+	o_Band_3 : BOOL;
+	o_Bohrer : BOOL;
+	o_Bohwerk_zurueck : BOOL;
+	o_Bohwerk_vor : BOOL;
+	o_LED_Abnahmeposition : BOOL;
+	
+	o_Anzahl_Erreicht: BOOL;
+END_VAR
+VAR
+	SchrittNr : INT := 0;		// INndexvariable / Schrittnummer
+	TON_Einlaufverzoegerung : TON;
+	//eStp : (INIT, INFEED, BW_Fwd,BW_Bwd,OUTFEED,IN_ENDPOS,WAIT  );
+	CTU_Werkstueckzaehler : CTU;
+	eStep : (INIT, FEED_IN, DRILL_FWD, DRILL_BWD,FEED_OUT,IN_END_POS, WAIT, ERROR);
+	
+END_VAR
+
+VAR_TEMP
+	t_Wartezeit_abgelaufen : BOOL;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Rücksetzen des Schrittnummer wenn Automatik nicht aktiv.
+
+IF NOT i_BA_Auto THEN
+		o_Band_1 := 0;
+		o_Band_2 := 0;
+		o_Band_3 := 0;
+		o_Bohrer := 0;
+		o_Bohwerk_vor := 0;
+		o_Bohwerk_zurueck := 0;
+		o_LED_Abnahmeposition := 0;
+		SchrittNr := 0;
+END_IF
+
+// Hier ein Bereich für den Code
+/////////////////////
+
+		CASE SchrittNr OF
+			
+			INIT:
+			IF i_BA_Auto AND NOT i_Schalter_BW_Zur THEN
+				o_Bohwerk_zurueck := 1;
+			ELSIF i_BA_Auto AND i_Schalter_BW_Zur THEN
+				o_Bohwerk_zurueck := 0;
+				SchrittNr := FEED_IN ;
+			ELSE;
+			END_IF
+			
+			FEED_IN:  // Transport von Pos 1 nach Pos 2
+			TON_Einlaufverzoegerung(IN:=i_BA_Auto AND i_LT_Band_1 AND NOT CTU_Werkstueckzaehler.Q ,
+									 PT:= i_Wartezeit_Soll,
+									 Q=> t_Wartezeit_abgelaufen,
+									 ET=> );
+									 
+		
+									 
+			//IF  t_Wartezeit_abgelaufen THEN
+			IF  t_Wartezeit_abgelaufen THEN
+				o_Band_1 := 1;
+				o_Band_2 := 1;
+				o_Band_3 := 0;
+				o_Bohrer := 0;
+				o_Bohwerk_vor := 0;
+				o_Bohwerk_zurueck := 0;
+				SchrittNr := DRILL_FWD ;
+			ELSE;
+			END_IF
+			
+			DRILL_FWD: // Bohrwerk vor Fahren
+			IF i_BA_Auto AND i_LT_Band_2 THEN
+				o_Band_1 := 0;
+				o_Band_2 := 0;
+				o_Band_3 := 0;
+				o_Bohrer := 1;
+				o_Bohwerk_vor := 1;
+				o_Bohwerk_zurueck := 0;
+				SchrittNr := DRILL_BWD ;
+			ELSE;
+			END_IF
+			
+			
+			DRILL_BWD: // Bohrwerk zurück Fahren
+			IF i_BA_Auto AND i_Schalter_Bw_Vor THEN
+				o_Band_1 := 0;
+				o_Band_2 := 0;
+				o_Band_3 := 0;
+				o_Bohrer := 1;
+				o_Bohwerk_vor := 0;
+				o_Bohwerk_zurueck := 1;
+				SchrittNr := FEED_OUT ;
+			ELSE;
+			END_IF
+			
+			FEED_OUT: // Transport von Pos 2 nach Pos 3
+			IF i_BA_Auto AND i_Schalter_BW_Zur THEN
+				o_Band_1 := 0;
+				o_Band_2 := 1;
+				o_Band_3 := 1;
+				o_Bohrer := 0;
+				o_Bohwerk_vor := 0;
+				o_Bohwerk_zurueck := 0;
+				SchrittNr := IN_END_POS ;
+			ELSE;
+			END_IF
+			
+			IN_END_POS: // Abnahmepostion erreicht
+			IF i_BA_Auto AND i_LT_Band_3 THEN
+				o_Band_1 := 0;
+				o_Band_2 := 0;
+				o_Band_3 := 0;
+				o_Bohrer := 0;
+				o_Bohwerk_vor := 0;
+				o_Bohwerk_zurueck := 0;
+				o_LED_Abnahmeposition := 1;
+				SchrittNr := WAIT ;
+			ELSE;
+			END_IF
+			
+			WAIT: // Wartena auf Abnahme
+			IF i_BA_Auto AND NOT i_LT_Band_3 THEN
+				o_LED_Abnahmeposition := 0;
+				SchrittNr := INIT ;
+			ELSE;
+			END_IF
+		
+		ELSE  // Sicherheitsabfrage falls Zähler nicht plausibel
+				o_Band_1 := 0;
+				o_Band_2 := 0;
+				o_Band_3 := 0;
+				o_Bohrer := 0;
+				o_Bohwerk_vor := 0;
+				o_Bohwerk_zurueck := 0;
+				
+		END_CASE
+
+CTU_Werkstueckzaehler(
+	CU:= i_BA_Auto AND i_LT_Band_3 , 
+	RESET:= i_Reset_Stueckzahl, 
+	PV:= i_Soll_Werstuecke, 
+	Q=> o_Anzahl_Erreicht, 
+	CV=> );
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Autoamtikablauf">
+      <LineId Id="3" Count="119" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

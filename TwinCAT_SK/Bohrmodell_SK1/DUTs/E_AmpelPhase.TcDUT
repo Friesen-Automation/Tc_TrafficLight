@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_AmpelPhase" Id="{4a04ad9d-b5ba-462a-8b8d-57ae1cd32cd1}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_AmpelPhase :
+(
+	INIT := 0,
+	ROT,
+	GRUEN,
+	GELB,
+	ROTGELB
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

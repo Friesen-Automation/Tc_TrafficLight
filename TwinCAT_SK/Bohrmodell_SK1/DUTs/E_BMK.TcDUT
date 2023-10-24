@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="E_BMK" Id="{35458dfa-fb94-4673-a6e4-85137bc35356}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_BMK :
+(
+	Band_1 := 1,
+	Band_2 := 2,
+	Band_3 := 3,
+	Bohrer  := 4,	
+	BW_FWD  := 5,
+	BW_BWD  := 6
+	
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

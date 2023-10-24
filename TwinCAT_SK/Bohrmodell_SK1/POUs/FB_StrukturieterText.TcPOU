@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_StrukturieterText" Id="{b7d63741-9653-4ae0-a831-49d06c4ff234}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_StrukturieterText
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	nCounter: INT := 0;
+	nCounterSav: INT := 0;
+	reCount	: R_TRIG;
+	ForceCheck	: BOOL;
+	Ergebnis : INT ;
+	Wert1	: INT;
+	Wert2	: INT;
+	Motor1	:BOOL;
+	Motor2	:BOOL;
+	Zylinder:BOOL;
+	Zylinder2:BOOL;
+	step:int;
+	
+	Bedingung: BOOL;
+	Anweisungen	:BOOL;
+	Anweisungen2: BOOL;
+	Anweisungen3: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+
+
+
+
+Ergebnis := Wert1 + Wert2;
+
+
+IF Bedingung THEN
+	Anweisungen;
+ELSIF
+	Anweisungen2;
+ELSE
+	Anweisungen3;
+END_IF
+
+
+
+
+
+IF Bedingung THEN
+	Anweisungen;
+ELSIF
+	Anweisungsblock2;
+ELSE
+	Anweisung
+END_IF
+
+
+
+
+
+
+
+
+
+
+
+
+
+CASE step OF	
+	1:	Motor1:= TRUE;
+		Motor2:= FALSE;
+		
+	2,7:	Motor1:= FALSE;
+			Motor2:= TRUE;
+		
+	8..12:	Motor1:= TRUE;
+			Motor2:= TRUE;
+ELSE
+		Motor1:= FALSE;
+		Motor2:= FALSE;
+END_CASE
+
+
+
+
+
+
+
+
+
+
+
+
+nCounter := 5000;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+nCounter := nCounter + 1;
+
+//IF nCounter = 600 THEN 
+//	ForceCheck := TRUE;
+//ELSE
+//	ForceCheck := FALSE;
+//END_IF
+
+reCount(CLK:=PRG_TaktGen.fb_Taktmerker.Takt_1s);
+IF reCount.Q THEN
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounter := nCounter + 1;
+	nCounterSav := nCounter;
+	
+END_IF
+
+nCounter := nCounter;
+IF NOT PRG_TaktGen.fb_Taktmerker.Takt_1s THEN
+	nCounterSav := 0;
+END_IF
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_StrukturieterText">
+      <LineId Id="47" Count="7" />
+      <LineId Id="97" Count="1" />
+      <LineId Id="102" Count="0" />
+      <LineId Id="104" Count="3" />
+      <LineId Id="103" Count="0" />
+      <LineId Id="99" Count="2" />
+      <LineId Id="86" Count="1" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="90" Count="3" />
+      <LineId Id="89" Count="0" />
+      <LineId Id="56" Count="12" />
+      <LineId Id="128" Count="0" />
+      <LineId Id="115" Count="0" />
+      <LineId Id="114" Count="0" />
+      <LineId Id="121" Count="1" />
+      <LineId Id="111" Count="0" />
+      <LineId Id="123" Count="2" />
+      <LineId Id="110" Count="0" />
+      <LineId Id="113" Count="0" />
+      <LineId Id="126" Count="0" />
+      <LineId Id="109" Count="0" />
+      <LineId Id="70" Count="10" />
+      <LineId Id="3" Count="32" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

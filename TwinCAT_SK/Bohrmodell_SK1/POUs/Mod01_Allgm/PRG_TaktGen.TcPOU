@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_TaktGen" Id="{2c3c58b0-390f-4f6a-8943-f24fb69e5626}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_TaktGen
+VAR
+	fb_TaktGen	: FB_Takt;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fb_TaktGen();]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_TaktGen">
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

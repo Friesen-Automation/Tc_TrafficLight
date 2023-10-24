@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_MAIN" Id="{f327051d-30c9-411f-a87f-f29159a5f11e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_MAIN
+VAR
+	
+	fb_Antriebe : FB_Antriebe;
+	fb_Betriebsart : FB_BA_Umschaltung;
+	fbADSLogger		: FB_AdsLog;
+	fbAmpel			: FB_Ampel;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+fb_Betriebsart();
+fb_Antriebe();
+fbADSLogger();
+
+fbAmpel(bBlinktakt := GVL_HMI_Ampel.bBlinktakt,
+		btnReset:= GVL_HMI_Ampel.btnReset,
+		btnActive := GVL_HMI_Ampel.btnActive,
+		LED_ROT => GVL_HMI_Ampel.LED_Rot,
+		LED_GELB => GVL_HMI_Ampel.LED_Gelb,
+		LED_GRUEN => GVL_HMI_Ampel.LED_Gruen,
+	config := GVL_Ampel.config[E_Ampeln.Lindesntrasse]);
+		
+GVL_A1.S01_C3_PF1 := fbAmpel.LED_ROT;
+GVL_A1.S01_C3_PJ1 := fbAmpel.LED_ROT AND GVL_HMI_Ampel.bBlinktakt;
+GVL_A1.S01_C3_PF2 := fbAmpel.LED_GELB;
+GVL_A1.S01_C3_PF3 := fbAmpel.LED_GRUEN;
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_MAIN">
+      <LineId Id="3" Count="3" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="30" Count="4" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="11" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

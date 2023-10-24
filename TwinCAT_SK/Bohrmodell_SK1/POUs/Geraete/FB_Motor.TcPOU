@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Motor" Id="{0c7050d9-8fe7-4649-9193-87d938ac2e31}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Motor
+VAR_INPUT
+	i_Schalter_Pult: BOOL; 	// Schalter für die Manuelle bedienung des Motors über das Pult
+	i_Freigabe : BOOL;		// Freigabe für das Ansteuern des Motors (TRUE für Freigabe FALSE für Verriegelung)
+	i_BA_Hand: BOOL;		// Betriebsart Hand aktiv
+	
+	// Betriebsart Autoamtik aktiv
+	i_BA_Auto: BOOL;
+	// Start des Antriebs in Automatikbetrieb
+	i_Start_Auto: BOOL;
+END_VAR
+VAR_OUTPUT
+	o_Antrieb : BOOL; 		// Ausgang für die Antriebsansteuerung (TRUE = Motor EIN)
+	o_LED_Pult : BOOL;		// Anzeige für Motor EIN
+	o_Motordaten: DUT_Motordaten;
+END_VAR
+
+VAR
+	FM_Einschaltvorgaenge : R_TRIG;  // Postive Flankenabfrage
+END_VAR
+
+VAR_TEMP
+	t_Antrieb : BOOL;		// Variable als Zwischenspeicher des Antriebssignals
+	re_MotorEin : BOOL;
+END_VAR
+
+VAR_IN_OUT
+	io_Einschaltvoergaenge: UINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Bildung des Steuersignals für Motoransteuerung
+t_Antrieb := ((i_BA_Hand AND i_Schalter_Pult)
+				OR (i_BA_Auto AND i_Start_Auto)) AND i_Freigabe;	
+o_Antrieb := t_Antrieb;							// Zuweisung des Steuersignals an den Ausgang Antrieb
+o_LED_Pult := t_Antrieb;						// Zweisung des Steuersignals an die Meldeleuchte
+
+FM_Einschaltvorgaenge(CLK:=t_Antrieb , Q=> );
+
+IF FM_Einschaltvorgaenge.Q THEN
+	io_Einschaltvoergaenge := io_Einschaltvoergaenge +1;
+END_IF
+
+
+o_Motordaten.Einschaltvorgange := io_Einschaltvoergaenge;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

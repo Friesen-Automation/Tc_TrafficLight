@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_HMI" Id="{a018f69f-c419-4915-9b1a-cc5c4ffb9557}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_HMI
+VAR
+	counter	: FB_Counter;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[GVL_HMI.output_1:=  GVL_HMI.input_1 AND GVL_HMI.input_2;
+
+counter(CTU:=GVL_HMI.btn_CTU ,
+		CTD:=GVL_HMI.btn_CTD , 
+		Step:= 1, 
+		Value:= GVL_HMI.Counter);]]></ST>
+    </Implementation>
+    <LineIds Name="PRG_HMI">
+      <LineId Id="5" Count="0" />
+      <LineId Id="8" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="10" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

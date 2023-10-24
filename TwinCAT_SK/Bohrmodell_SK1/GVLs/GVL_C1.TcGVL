@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_C1" Id="{700163ef-b573-464f-9172-1a8319ca640b}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+
+//
+// Eingänge Bedienpult
+//=================================
+
+S01_C1_SF16		AT%I*   : BOOL; // Taster/Schalter Reset
+S01_C1_SF15     AT%I*   : BOOL; // Taster/Schalter - Reserve
+S01_C1_SF14     AT%I*   : BOOL; // Taster/Schalter BW vor EIN
+S01_C1_SF13     AT%I*   : BOOL; // Taster/Schalter BW zurück EIN
+S01_C1_SF12     AT%I*   : BOOL; // Taster/Schalter Bohrer EIN
+S01_C1_SF11     AT%I*   : BOOL; // Taster/Schalter Band 3 EIN
+S01_C1_SF10     AT%I*   : BOOL; // Taster/Schalter Band 2 EIN
+S01_C1_SF9      AT%I*   : BOOL; // Taster/Schalter Band 1 EIN
+
+S01_C1_SF8		AT%I*   : BOOL; // Taster/Schalter Quittieren
+S01_C1_SF7      AT%I*   : BOOL; // Taster/Schalter 
+S01_C1_SF6      AT%I*   : BOOL; // Taster/Schalter Rücksetzten
+S01_C1_SF5      AT%I*   : BOOL; // Taster/Schalter Setzen
+S01_C1_SF4      AT%I*   : BOOL; // Taster/Schalter Test IF
+S01_C1_SF3      AT%I*   : BOOL; // Taster/Schalter Anwahl Automatik 
+S01_C1_SF2      AT%I*   : BOOL; // Taster/Schalter Anwahl Hand
+S01_C1_SF1      AT%I*   : BOOL; // Schalter Anlage EIN/AUS true=Anlage EIN
+
+//
+// Ausgänge Bedienpult
+//=================================
+
+S01_C1_PF16		AT%Q*	: BOOL; // Anzeige/LED  Warten Abnahme
+S01_C1_PF15		AT%Q*	: BOOL; // Anzeige/LED  Stückzahl erreicht
+S01_C1_PF14		AT%Q*	: BOOL; // Anzeige/LED  RS
+S01_C1_PF13		AT%Q*	: BOOL; // Anzeige/LED  SR
+S01_C1_PF12		AT%Q*	: BOOL; // Anzeige/LED  Test IF
+S01_C1_PF11		AT%Q*	: BOOL; // Anzeige/LED  BA Auto EIN
+S01_C1_PF10		AT%Q*	: BOOL; // Anzeige/LED  BA Hand EIN
+S01_C1_PF9		AT%Q*	: BOOL; // Anzeige/LED  Anlage EIN
+
+S01_C1_PF8		AT%Q*	: BOOL; // Anzeige/LED Störung
+S01_C1_PF7		AT%Q*	: BOOL; // Anzeige/LED - Reserve
+S01_C1_PF6		AT%Q*	: BOOL; // Anzeige/LED BW vor EIN
+S01_C1_PF5		AT%Q*	: BOOL; // Anzeige/LED BW zurück EIN
+S01_C1_PF4		AT%Q*	: BOOL; // Anzeige/LED Bohrer EIN
+S01_C1_PF3		AT%Q*	: BOOL; // Anzeige/LED Band 3 EIN
+S01_C1_PF2		AT%Q*	: BOOL; // Anzeige/LED Band 2 EIN
+S01_C1_PF1		AT%Q*	: BOOL; // Anzeige/LED Band 1 EIN
+
+
+
+
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

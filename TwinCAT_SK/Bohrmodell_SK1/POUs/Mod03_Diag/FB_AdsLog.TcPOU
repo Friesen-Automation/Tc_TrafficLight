@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_AdsLog" Id="{a5c9d88e-2503-4d87-ba56-4ab86a7d3854}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_AdsLog
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	reBtnReset	: R_TRIG;						// Flankenerkennng für Meldeauslösung
+	udiAdsLogResStr	: DINT;						// Aufrufergebnis 0 = i.O. oder Fehlercode
+	strMessageVariable	: STRING := 'Reset';	// Variabler Meldetext
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+reBtnReset(CLK:=GVL_C1.S01_C1_SF16);
+IF reBtnReset.Q THEN
+	udiAdsLogResStr:= ADSLOGSTR(msgCtrlMask:=	ADSLOG_MSGTYPE_WARN 
+												OR ADSLOG_MSGTYPE_LOG 
+												OR ADSLOG_MSGTYPE_MSGBOX ,
+												 msgFmtStr:= 'Betätigte Taste: %s',
+												strArg:=strMessageVariable );
+END_IF;]]></ST>
+    </Implementation>
+    <LineIds Name="FB_AdsLog">
+      <LineId Id="18" Count="0" />
+      <LineId Id="17" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="15" Count="1" />
+      <LineId Id="13" Count="1" />
+      <LineId Id="21" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

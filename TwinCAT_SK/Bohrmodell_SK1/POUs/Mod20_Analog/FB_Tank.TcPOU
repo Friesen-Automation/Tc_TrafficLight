@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Tank" Id="{f18d064e-daad-461b-802e-71f79dad3943}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Tank
+VAR_INPUT
+	i_Fuellstand : INT;
+END_VAR
+VAR_OUTPUT
+	o_Fuellstand : INT;
+	o_Drehzahl 	: INT;
+END_VAR
+VAR
+	g_Fuellstand : REAL; // Normierter Füllstandswert
+	g_Drehzahl : REAL;  	// Normierter Drehzahlwert
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+g_Fuellstand := scale_in(
+	input:= i_Fuellstand, 
+	DV_min:= 0, 
+	DV_max:= 32767, 
+	LOW_Lim:= 0, 
+	High_Lim:= 125);
+	
+o_Fuellstand := scale_out(
+	input:= g_Fuellstand, 
+	DV_min:= 0, 
+	DV_max:= 32767, 
+	LOW_Lim:= 0, 
+	High_Lim:= 125);
+	
+	
+	
+o_Drehzahl := scale_out(
+	input:= g_Drehzahl, 
+	DV_min:= 0, 
+	DV_max:= 32767, 
+	LOW_Lim:= 0, 
+	High_Lim:= 100);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+// Motorsteuerung
+IF g_Fuellstand >= 50 AND g_Fuellstand < 100 THEN
+	g_Drehzahl := 50;
+ELSIF g_Fuellstand >= 100 THEN
+	g_Drehzahl := 100;
+ELSE
+	g_Drehzahl := 0;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

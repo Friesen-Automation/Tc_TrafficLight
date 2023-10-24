@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_Ampel" Id="{73c3e3f8-dcb8-4d7e-8cb6-fbc5c8368641}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	config: ARRAY[0..20] OF DUT_AmpelConfig;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

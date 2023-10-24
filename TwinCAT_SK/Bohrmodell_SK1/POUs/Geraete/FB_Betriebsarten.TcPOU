@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Betriebsarten" Id="{b7e53778-6eb0-438f-893e-789f82af895a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Betriebsarten
+
+VAR_INPUT
+	i_S_Analge_ein	: BOOL;  // Signal, dass die Anlage aktiv ist
+	i_T_BA_ein		: BOOL;		// Signal für das aktivieren der Betriebsart
+	i_T_BA_aus		: BOOL;		// Signal für das deaktivieren der Betriebsart
+END_VAR
+VAR_OUTPUT
+	o_BA			: BOOL;  // Ausgang für die aktive Betriebsart
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT i_S_Analge_ein OR i_T_BA_aus THEN		// Abfrage Anlae ein und Verriegelung
+	o_BA := FALSE;								// Betriebsart ausschalten
+ELSIF i_T_BA_ein THEN							// Abfrage Taster Betriebsart
+	o_BA := TRUE;								// Betreibsart einschalten
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

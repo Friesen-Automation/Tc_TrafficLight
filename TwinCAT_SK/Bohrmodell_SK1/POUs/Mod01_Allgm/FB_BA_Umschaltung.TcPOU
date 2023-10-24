@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_BA_Umschaltung" Id="{9790f54f-8bca-4ec3-87df-f661afca5b5f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_BA_Umschaltung
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	FB_BA_Hand : FB_Betriebsarten;
+	FB_BA_Auto : FB_Betriebsarten;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Betriebsartenumdschaltung
+//==========================
+// 15.02.2023 J.Friesen
+// Wenn der Hauptschalter "Anlage Ein" Betätigt ist soll es möglich sein die Betriebsarten
+// zu aktiveiren. Die Betriebsarten sollen gegen einander verriegelt sein so, dass
+// das Aktiveren beider Betriebsarten gleichzeitig nicht möglich sein soll. 
+
+
+// Aufruf der Betriebsartenumschaltung für Automatikbetrieb
+FB_BA_Auto(i_S_Analge_ein:= GVL_C1.S01_C1_SF1,	
+			i_T_BA_ein:=  GVL_C1.S01_C1_SF3 ,
+			i_T_BA_aus:=  GVL_C1.S01_C1_SF2,	
+			o_BA=> GVL_GlobalData.b_BA_Auto);
+			
+
+// Aufruf der Betriesartenumschaltung für handbetrieb			
+FB_BA_Hand(	i_S_Analge_ein:= GVL_C1.S01_C1_SF1 ,
+ 			i_T_BA_ein:=  GVL_C1.S01_C1_SF2,
+			i_T_BA_aus:=  GVL_C1.S01_C1_SF3,
+			o_BA=> GVL_GlobalData.b_BA_Hand);
+			
+			
+// Signalzuweisung zu Pult Meldeleuchten
+//=========================================		
+	GVL_C1.S01_C1_PF9 := GVL_C1.S01_C1_SF1;  		// Zuweisung Meldeleuchte PULT
+	GVL_C1.S01_C1_PF10 := GVL_GLobalData.b_BA_Hand;	// Zuweisung Meldleuchte Pult BA Hand
+	GVL_C1.S01_C1_PF11 := GVL_GLobalData.b_BA_Auto;	// Zuweisung Meldeleuchte Pult BA Automatik
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_BA_Umschaltung">
+      <LineId Id="3" Count="9" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="17" Count="11" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

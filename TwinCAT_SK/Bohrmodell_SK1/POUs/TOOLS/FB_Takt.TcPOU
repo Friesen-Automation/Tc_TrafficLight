@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_Takt" Id="{bc35b369-10af-48ab-a6d8-07058ca157a8}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Takt
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	Timer_1s : TON; // timer für den Takt
+	Timer_500ms	:TON;	//Timer für Ampelblinktakt
+	Takt_1s	: BOOL;	// Tooglevariable
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Timer_1s(IN:=NOT Timer_1s.Q ,
+		 PT:=T#1S );
+		 
+Takt_1s := Takt_1s XOR Timer_1s.Q;
+
+//Timer für Ampelblinktakt
+Timer_500ms(IN:=NOT Timer_500ms.Q ,
+		 	PT:=T#600MS );
+			
+GVL_HMI_Ampel.bBlinktakt := GVL_HMI_Ampel.bBlinktakt 
+							XOR Timer_500ms.Q;
+		 ]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Takt">
+      <LineId Id="9" Count="0" />
+      <LineId Id="14" Count="1" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="27" Count="0" />
+      <LineId Id="30" Count="4" />
+      <LineId Id="29" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="E_Ampeln" Id="{12d181c1-bb60-4902-a2c4-bc59e9aa1e57}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_Ampeln :
+(
+	Lindesntrasse := 0,
+	Hauptstrasse := 1,
+	Nebenstrasse := 2
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

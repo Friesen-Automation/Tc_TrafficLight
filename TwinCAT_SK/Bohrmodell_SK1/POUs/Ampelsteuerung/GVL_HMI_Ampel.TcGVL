@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_HMI_Ampel" Id="{ac20dcd6-06b5-4357-89f9-cb0f4ab2f63b}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+	LED_Rot	: BOOL;
+	LED_Gelb: BOOL;
+	LED_Gruen	: BOOL;
+	
+	btnReset	: BOOL;
+	btnActive	: BOOL;
+	
+	bBlinktakt	: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

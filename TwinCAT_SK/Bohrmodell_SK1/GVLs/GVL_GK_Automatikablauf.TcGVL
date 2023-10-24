@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <GVL Name="GVL_GK_Automatikablauf" Id="{30b804e4-bd51-4769-9028-b2572f39800a}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+b_A_Band_1 : BOOL;				// Signal für Band 1 im Automatikbetrieb
+b_A_Band_2 : BOOL;				// Signal für Band 2 im Automatikbetrieb
+b_A_Band_3 : BOOL;				// Signal für Band 3 im Automatikbetrieb
+b_A_Bohrer : BOOL;				// Signal für den Bohrer im Automatikbetrieb
+b_A_Bohrwerk_zurueck : BOOL;	// Signal für das Bohrwerk zurück im Automatikbetrieb
+b_A_Bohrwerk_vor : BOOL;		// Signal für das Bohrwerk zurück im Automatikbetrieb
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

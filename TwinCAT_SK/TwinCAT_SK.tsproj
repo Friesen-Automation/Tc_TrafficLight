@@ -1,0 +1,1785 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.44">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ff00bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1006">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1007">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060606060404040404040606060ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060606060404040404040606060ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060404040404040787878989898606060787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060787878989898989898787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060787878989898989898787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060404040404040787878989898989898787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff606060606060606060787878989898989898787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff60c040787878c0c090c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff60c040787878c0c090c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff60c040787878c0c090c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00fff0d000787878c0c090c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878787878787878</ImageData>
+		<ImageData Id="1008">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ff989898989898989898989898989898b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0989898989898989898989898989898ff00ff989898505050c0c0c0505050989898b0b0b0505050c0c0c0505050b0b0b0989898505050c0c0c0505050989898ff00ff989898c0c0c0c0c0c0c0c0c0989898b0b0b0c0c0c0c0c0c0c0c0c0b0b0b0989898c0c0c0c0c0c0c0c0c0989898ff00ff989898505050c0c0c0505050989898b0b0b0505050c0c0c0505050b0b0b0989898505050c0c0c0505050989898ff00ff989898c0c0c0c0c0c0c0c0c0989898b0b0b0c0c0c0c0c0c0c0c0c0b0b0b0989898c0c0c0c0c0c0c0c0c0989898ff00ff989898505050c0c0c0505050989898b0b0b0505050c0c0c0505050b0b0b0989898505050c0c0c0505050989898ff00ff989898c0c0c0c0c0c0c0c0c0989898b0b0b0c0c0c0c0c0c0c0c0c0b0b0b0989898c0c0c0c0c0c0c0c0c0989898ff00ff989898505050c0c0c0505050989898b0b0b0505050c0c0c0505050b0b0b0989898505050c0c0c0505050989898ff00ff787878787878787878787878787878d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0787878787878787878787878787878ff00ff787878c0c090c0c090c0c090787878d0d0d0c0c090c0c090c0c090d0d0d0787878c0c090c0c090c0c090787878ff00ff787878c0c090c0c090c0c090787878d0d0d0c0c090c0c090c0c090d0d0d0787878c0c090c0c090c0c090787878ff00ff787878c0c090c0c090c0c090787878d0d0d0c0c090c0c090c0c090d0d0d0787878c0c090c0c090c0c090787878ff00fff0d000c0c090c0c090c0c090787878f0d000c0c090c0c090c0c090d0d0d0f0d000c0c090c0c090c0c090787878ff00ff787878787878787878787878787878d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0787878787878787878787878787878</ImageData>
+		<ImageData Id="1009">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff787878787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ff00e0e000e0e000e0e000e0e000a0a0ff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ff00a0a0ff00ffff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1010">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000a0ff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000a00000a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ff0000e00000e00000e00000a00000a0ff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff787878787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ff0000e00000e00000a0ff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1011">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ff0000a0ff00ffff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ff0000e00000a00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ff0000e00000e00000e00000a00000a000e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff787878787878787878787878787878ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ff0000e00000e00000a000e0e000e0e000e0e000e0e000a0a0ff00ff787878c0c090c0c090c0c090787878ff00ffff00ff0000e00000e00000a0ff00ff00e0e000e0e000a0a0ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ff0000e00000e00000a0ff00ffff00ff00a0a0ff00ffff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1012">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff787878787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ff00d00000d00000d00000d000008000ff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ff00d00000d000008000ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ff008000ff00ffff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1013">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffb05000ff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00fff08000f08000f08000f08000b05000ff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff787878787878787878787878787878ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00fff08000f08000b05000ff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1014">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ff787000787000787000787000787000787000ff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ff787000787000787000787000787000787000ff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ffa09800a09800ff00ffff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ffff00ffff00ffff00ffa09800a09800ff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffa09800a09800a09800a09800a09800a09800ff00ff787878787878787878787878787878ff00ffff00ffff00ffff00ffa09800a09800a09800a09800a09800a09800ff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffa09800a09800ff00ffff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffa09800a09800ff00ffff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1015">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898989898989898989898989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ff787000ff00ffff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ff787000787000787000787000787000a09800787000ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffa09800a09800a09800a09800a09800a09800a09800787000ff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffa09800a09800a09800a09800a09800a09800a09800ff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ffff00ffff00ffff00ffff00ffff00ffa09800ff00ffff00ffff00ff989898c0c0c0c0c0c0c0c0c0989898ff00ffff00ffff00ff787000ff00ffff00ffff00ffff00ffff00ffff00ffff00ff989898505050c0c0c0505050989898ff00ffff00ff787000a09800787000787000787000787000787000ff00ffff00ff787878787878787878787878787878ff00ff787000a09800a09800a09800a09800a09800a09800a09800ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffa09800a09800a09800a09800a09800a09800a09800ff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffa09800ff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00fff0d000c0c090c0c090c0c090787878ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff787878787878787878787878787878</ImageData>
+		<ImageData Id="1016">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0b0b0b0b0b0b0b0b0b0b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0505050c0c0c0505050b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0c0c0c0c0c0c0c0c0c0b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0505050c0c0c0505050b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0c0c0c0c0c0c0c0c0c0b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0505050c0c0c0505050b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0c0c0c0c0c0c0c0c0c0b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffb0b0b0505050c0c0c0505050b0b0b0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffd0d0d0d0d0d0d0d0d0d0d0d0d0d0d0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffd0d0d0c0c090c0c090c0c090d0d0d0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffd0d0d0c0c090c0c090c0c090d0d0d0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffd0d0d0c0c090c0c090c0c090d0d0d0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00fff0d000c0c090c0c090c0c090d0d0d0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffd0d0d0d0d0d0d0d0d0d0d0d0d0d0d0</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{380A0B0A-73B1-4B70-A790-895812A9D462}" TargetNetId="172.16.0.8.1.1" Target64Bit="true" AutoPrioManagement="true" ShowHideConfigurations="#x106">
+		<System>
+			<Settings MaxCpus="4" NonWinCpus="1">
+				<Cpu CpuId="3"/>
+				<IoIdleTask Priority="4"/>
+			</Settings>
+			<Tasks>
+				<Task Id="3" Priority="6" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+				<Task Id="4" Priority="8" CycleTime="100000" AmsPort="351" AdtTasks="true">
+					<Name>TaktGen</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project GUID="{F71B0358-8DB3-48D8-8AE7-4FD4CE4EDD59}" Name="Bohrmodell_SK1" PrjFilePath="Bohrmodell_SK1\Bohrmodell_SK1.plcproj" TmcFilePath="Bohrmodell_SK1\Bohrmodell_SK1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Bohrmodell_SK1\Bohrmodell_SK1.tmc" TmcHash="{5379B5EB-9D4F-E932-5459-307E23834583}">
+					<Name>Bohrmodell_SK1 Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>GVL_A1.GL1_B1_BG1</Name>
+							<Comment><![CDATA[ Belegtmeldung Station Zuführen [TRUE = belegt]]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.GL2_B2_BG1</Name>
+							<Comment><![CDATA[ Belegtmeldung Station Bearbeiten [TRUE = belegt]]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.GL3_B3_BG1</Name>
+							<Comment><![CDATA["Belegtmeldung Station Bereitstellen [TRUE = belegt]"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.TM1_B2_BG1</Name>
+							<Comment><![CDATA[ "Endlage Bohrwerk hinten [TRUE = hinten]"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.TM1_B2_BG2</Name>
+							<Comment><![CDATA[ "Endlage Bohrwerk vorne [TRUE = vorne]"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF16</Name>
+							<Comment><![CDATA[ Taster/Schalter Reset]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF14</Name>
+							<Comment><![CDATA[ Taster/Schalter BW vor EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF13</Name>
+							<Comment><![CDATA[ Taster/Schalter BW zurück EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF12</Name>
+							<Comment><![CDATA[ Taster/Schalter Bohrer EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF11</Name>
+							<Comment><![CDATA[ Taster/Schalter Band 3 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF10</Name>
+							<Comment><![CDATA[ Taster/Schalter Band 2 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF9</Name>
+							<Comment><![CDATA[ Taster/Schalter Band 1 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF3</Name>
+							<Comment><![CDATA[ Taster/Schalter Anwahl Automatik ]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF2</Name>
+							<Comment><![CDATA[ Taster/Schalter Anwahl Hand]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF1</Name>
+							<Comment><![CDATA[ Schalter Anlage EIN/AUS true=Anlage EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL_A1.GL1_B1_MA1</Name>
+							<Comment><![CDATA[ "Motor Station Zuführen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.GL2_B2_MA1</Name>
+							<Comment><![CDATA[ "Motor Station Bearbeiten"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.GL3_B3_MA1</Name>
+							<Comment><![CDATA[ "Motor Station Bereitstellen"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.TM1_B2_MA1</Name>
+							<Comment><![CDATA[ "Motor Bohrspindel"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.TM1_B2_MA2_1</Name>
+							<Comment><![CDATA[ "Bohrschlitten zurück"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.TM1_B2_MA2_2</Name>
+							<Comment><![CDATA[ "Bohrschlitten vor"        ]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_PF1</Name>
+							<Comment><![CDATA[ "Ampel rot Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_PF2</Name>
+							<Comment><![CDATA[ "Ampel gelb Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_PF3</Name>
+							<Comment><![CDATA[ "Ampel grün Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_PJ1</Name>
+							<Comment><![CDATA[ "Signalgeber Hupe Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF16</Name>
+							<Comment><![CDATA[ Anzeige/LED  Warten Abnahme]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF15</Name>
+							<Comment><![CDATA[ Anzeige/LED  Stückzahl erreicht]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF11</Name>
+							<Comment><![CDATA[ Anzeige/LED  BA Auto EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF10</Name>
+							<Comment><![CDATA[ Anzeige/LED  BA Hand EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF9</Name>
+							<Comment><![CDATA[ Anzeige/LED  Anlage EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF6</Name>
+							<Comment><![CDATA[ Anzeige/LED BW vor EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF5</Name>
+							<Comment><![CDATA[ Anzeige/LED BW zurück EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF4</Name>
+							<Comment><![CDATA[ Anzeige/LED Bohrer EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF3</Name>
+							<Comment><![CDATA[ Anzeige/LED Band 3 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF2</Name>
+							<Comment><![CDATA[ Anzeige/LED Band 2 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF1</Name>
+							<Comment><![CDATA[ Anzeige/LED Band 1 EIN]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="1" ContextId="1" AreaNo="16">
+						<Name>TaktGen Inputs</Name>
+						<Var>
+							<Name>GVL_A1.S01_C2_SF1</Name>
+							<Comment><![CDATA[ "Taster Station Zuführen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_SF1</Name>
+							<Comment><![CDATA[ "Taster Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.GL1_B1_BQ1</Name>
+							<Comment><![CDATA[ "Materialerkennung Station Zuführen [TRUE = Metall]"]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF15</Name>
+							<Comment><![CDATA[ Taster/Schalter - Reserve]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF8</Name>
+							<Comment><![CDATA[ Taster/Schalter Quittieren]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF7</Name>
+							<Comment><![CDATA[ Taster/Schalter ]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF6</Name>
+							<Comment><![CDATA[ Taster/Schalter Rücksetzten]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF5</Name>
+							<Comment><![CDATA[ Taster/Schalter Setzen]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_SF4</Name>
+							<Comment><![CDATA[ Taster/Schalter Test IF]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" ContextId="1" AreaNo="17">
+						<Name>TaktGen Outputs</Name>
+						<Var>
+							<Name>GVL_A1.S01_C2_PF1</Name>
+							<Comment><![CDATA[ "Anzeige grün Station Zuführen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C2_PF2</Name>
+							<Comment><![CDATA[ "Anzeige rot Station Zuführen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_A1.S01_C3_PF4</Name>
+							<Comment><![CDATA[ "Anzeige gelb Station Bereitstellen "]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF14</Name>
+							<Comment><![CDATA[ Anzeige/LED  RS]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF13</Name>
+							<Comment><![CDATA[ Anzeige/LED  SR]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF12</Name>
+							<Comment><![CDATA[ Anzeige/LED  Test IF]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF8</Name>
+							<Comment><![CDATA[ Anzeige/LED Störung]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL_C1.S01_C1_PF7</Name>
+							<Comment><![CDATA[ Anzeige/LED - Reserve]]></Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Contexts>
+						<Context>
+							<Id NeedCalleeCall="true">0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010030</OTCID>
+							</ManualConfig>
+							<Priority>6</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+						<Context>
+							<Id NeedCalleeCall="true">1</Id>
+							<Name>TaktGen</Name>
+							<ManualConfig>
+								<OTCID>#x02010040</OTCID>
+							</ManualConfig>
+							<Priority>8</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="6" OTCID="#x08502001"/>
+						<TaskPouOid Prio="8" OTCID="#x08502002"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="2" DevType="111" DevFlags="#x0003" AmsPort="28674" AmsNetId="172.16.0.8.3.1" RemoteName="Gerät 2 (EtherCAT)" InfoImageId="3">
+				<Name>Gerät 2 (EtherCAT)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>-801112064</Address>
+						<Offset>131072</Offset>
+						<Size>8192</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>3</BusNo>
+						<SlotNo>0</SlotNo>
+						<VendorId>5612</VendorId>
+						<DeviceId>20480</DeviceId>
+						<Dma>
+							<Address>0</Address>
+							<Offset>4096</Offset>
+							<Size>256</Size>
+							<BaseAddr>2</BaseAddr>
+							<RxChn>0</RxChn>
+							<TxChn>1</TxChn>
+						</Dma>
+						<Identification>
+							<Value>985215864</Value>
+							<Version>1</Version>
+							<Size>256</Size>
+						</Identification>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="2" AddrType="9" ImageType="3">
+					<Name>Prozessabbild</Name>
+				</Image>
+				<Box Id="1" BoxType="9099">
+					<Name>Klemme 1 (EK1200)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001388" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-5000 EtherCAT Netzteil (2A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
+					<Box Id="2" BoxType="9099">
+						<Name>-KF2 (EL1809)</Name>
+						<ImageId>7</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07113052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1809 16K. Dig. Eingang 24V, 3ms" Desc="EL1809" PortABoxInfo="#x01000001">
+							<SyncMan>001002000000010004000000000000000200001000010000</SyncMan>
+							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+							<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+								<Entry Name="GL1_B1_BG1" Index="#x6080" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+								<Entry Name="GL2_B2_BG1" Index="#x6090" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60a0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60b0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60c0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60d0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60e0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60f0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
+					<Box Id="3" BoxType="9099">
+						<Name>Klemme 3 (EL1809)</Name>
+						<ImageId>7</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07113052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1809 16K. Dig. Eingang 24V, 3ms" Desc="EL1809" PortABoxInfo="#x01000002">
+							<SyncMan>001002000000010004000000000000000200001000010000</SyncMan>
+							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+							<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+								<Entry Name="S01_C1_SF1" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+								<Entry Name="S01_C1_SF2" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+								<Entry Name="GVL_C1.S01_C1_SF3" Index="#x6020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+								<Entry Name="GVL_C1.S01_C1_SF4" Index="#x6030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+								<Entry Name="GVL_C1.S01_C1_SF5" Index="#x6040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6080" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x6090" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60a0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60b0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60c0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60d0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60e0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+								<Entry Name="Input" Index="#x60f0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
+					<Box Id="4" BoxType="9099">
+						<Name>Klemme 4 (EL2809)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0af93052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2809 16K. Dig. Ausgang 24V, 0.5A" Desc="EL2809" PortABoxInfo="#x01000003">
+							<SyncMan>000f01004400010003000000000000000100000f44090000</SyncMan>
+							<SyncMan>010f01004400010003000000000000000100010f44090000</SyncMan>
+							<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
+							<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 4" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 5" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 6" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 7" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 8" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 9" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x7080" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 10" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x7090" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 11" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70a0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 12" Index="#x160b" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70b0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 13" Index="#x160c" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70c0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 14" Index="#x160d" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70d0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 15" Index="#x160e" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70e0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 16" Index="#x160f" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70f0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
+					<Box Id="5" BoxType="9099">
+						<Name>Klemme 5 (EL2809)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0af93052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2809 16K. Dig. Ausgang 24V, 0.5A" Desc="EL2809" PortABoxInfo="#x01000004">
+							<SyncMan>000f01004400010003000000000000000100000f44090000</SyncMan>
+							<SyncMan>010f01004400010003000000000000000100010f44090000</SyncMan>
+							<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
+							<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7000" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7010" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 3" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7020" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 4" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7030" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 5" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7040" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 6" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7050" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 7" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7060" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 8" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="0">
+								<Entry Name="Output" Index="#x7070" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 9" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x7080" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 10" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x7090" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 11" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70a0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 12" Index="#x160b" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70b0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 13" Index="#x160c" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70c0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 14" Index="#x160d" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70d0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 15" Index="#x160e" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70e0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Channel 16" Index="#x160f" InOut="1" Flags="#x0011" SyncMan="1">
+								<Entry Name="Output" Index="#x70f0" Sub="#x01">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+						</EtherCAT>
+					</Box>
+					<Box Id="6" BoxType="9099">
+						<Name>Klemme 6 (EK1110)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04562c52" RevisionNo="#x00110000" PortPhys="19" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1110 EtherCAT-Verlängerung" Desc="EK1110" PortABoxInfo="#x01000005"/>
+					</Box>
+				</Box>
+				<Box Id="7" BoxType="9099">
+					<Name>Klemme 7 (EK1100)</Name>
+					<ImageId>1003</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT-Koppler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x01000006"/>
+					<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Klemme 8 (EL3062)</Name>
+						<ImageId>1004</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0bf63052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3062 2K.Ana. Eingang 0-10V" Desc="EL3062" PortABoxInfo="#x01000007">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+							<SyncMan>801108002000010004000000000000000800801120010000</SyncMan>
+							<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<Pdo Name="AI Standard Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a01</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Underrange event active]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Overrange event active]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+								</Entry>
+								<Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 1" Index="#x1a01" Flags="#x0010">
+								<ExcludePdo>#x1a00</ExcludePdo>
+								<Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Standard Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+								<ExcludePdo>#x1a03</ExcludePdo>
+								<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Underrange event active]]></Comment>
+								</Entry>
+								<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Overrange event active]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value smaller/equal Limit1
+Bit1: Value bigger/equal Limit1]]></Comment>
+								</Entry>
+								<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+									<Type>BIT2</Type>
+									<Comment><![CDATA[Bit0: Value smaller/equal Limit2
+Bit1: Value bigger/equal Limit2]]></Comment>
+								</Entry>
+								<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+									<Type>BIT</Type>
+									<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+									<Type>BIT</Type>
+									<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
+								</Entry>
+								<Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AI Compact Channel 2" Index="#x1a03" Flags="#x0010">
+								<ExcludePdo>#x1a02</ExcludePdo>
+								<Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="19665801"/>
+							<CoeProfile ProfileNo="19665801"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+						<Name>Klemme 9 (EL4002)</Name>
+						<ImageId>1005</ImageId>
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fa23052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4002 2K. Ana. Ausgang 0-10V, 12bit" Desc="EL4002" PortABoxInfo="#x01000008">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001104002400010003000000000000000400001124010000</SyncMan>
+							<SyncMan>801100000000000004000000000000000000801100000000</SyncMan>
+							<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<Pdo Name="AO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Analog output" Index="#x7000" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="AO Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+								<Entry Name="Analog output" Index="#x7010" Sub="#x11" Flags="#x00020000">
+									<Type>INT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="26219401"/>
+							<CoeProfile ProfileNo="26219401"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="10" BoxType="9099">
+						<Name>Klemme 10 (EL9011)</Name>
+						<ImageId>1006</ImageId>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 Endklemme" Desc="EL9011" PortABoxInfo="#x01000009"/>
+					</Box>
+				</Box>
+				<Box Id="20" BoxType="9099" BoxFlags="#x00000020">
+					<Name>Box 20 (TB20 Coupler EtherCAT)</Name>
+					<ImageId>1007</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="35" VendorId="#x00000223" ProductCode="#x00000009" RevisionNo="#x00000002" InfoDataAddr="true" TimeoutMailbox2="6000" DownloadSlotCfg="true" PortPhys="17" DownloadSlotCfgIP="true" SlotPdoIncrement="4" SlotIndexIncrement="16" Type="TB20 Coupler EtherCAT (600-185-1AA11)" Desc="TB20 Coupler EtherCAT" PortABoxInfo="#x02000007">
+						<SyncMan>001080002600010001000000220000018000001026010000</SyncMan>
+						<SyncMan>001480002200010002000000220000018000001422010000</SyncMan>
+						<SyncMan>001801006400010003000000000000040000001864000000</SyncMan>
+						<SyncMan>002403002000010004000000000000040000002420000000</SyncMan>
+						<Fmmu>0000000000000000001800020100000001000000020000000200000000000000</Fmmu>
+						<Fmmu>0000000000000000002400010100000002000000020000000300000000000000</Fmmu>
+						<Pdo Name="Inputs" Index="#x1a04" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input 0" Index="#x6010" Sub="#x01" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 1" Index="#x6010" Sub="#x02" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 2" Index="#x6010" Sub="#x03" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 3" Index="#x6010" Sub="#x04" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 4" Index="#x6010" Sub="#x05" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 5" Index="#x6010" Sub="#x06" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 6" Index="#x6010" Sub="#x07" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 7" Index="#x6010" Sub="#x08" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Module Status" Index="#x1a05" Flags="#x0291" SyncMan="3">
+							<Entry Name="Present" Index="#xa010" Sub="#x01" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Operational" Index="#xa010" Sub="#x02" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Module Status" Index="#x1a09" Flags="#x0291" SyncMan="3">
+							<Entry Name="Present" Index="#xa020" Sub="#x01" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Operational" Index="#xa020" Sub="#x02" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="Outputs" Index="#x1605" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output 0" Index="#x7020" Sub="#x01" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 1" Index="#x7020" Sub="#x02" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 2" Index="#x7020" Sub="#x03" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 3" Index="#x7020" Sub="#x04" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 4" Index="#x7020" Sub="#x05" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 5" Index="#x7020" Sub="#x06" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 6" Index="#x7020" Sub="#x07" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 7" Index="#x7020" Sub="#x08" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+						</Pdo>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+							<Module Id="#x03090001" Type="8 DI - 600-210-0AH01" Class="TB20 Digital In">
+								<Name>Module 1 (8 DI - 600-210-0AH01)</Name>
+								<ImageId>1009</ImageId>
+								<ModuleData>2302000000000807000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6660</PdoIndex>
+								<PdoIndex>6661</PdoIndex>
+							</Module>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+							<Module Id="#x03090002" Type="8 DO - 600-220-0AH01" Class="TB20 Digital Out">
+								<Name>Module 2 (8 DO - 600-220-0AH01)</Name>
+								<ImageId>1010</ImageId>
+								<ModuleData>230200000000f00a000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6665</PdoIndex>
+								<PdoIndex>5637</PdoIndex>
+							</Module>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<Slot Name="Modules" ImageId="1008">
+							<SlotData>0000000001000000040000001000000000000000000000000000000000000000</SlotData>
+							<ModuleClass Class="TB20 Digital In" Name="Digital Input Modules" VendorId="547" ImageId="1009"/>
+							<ModuleClass Class="TB20 Digital Out" Name="Digital Output Modules" VendorId="547" ImageId="1010"/>
+							<ModuleClass Class="TB20 Digital In/Out" Name="Digital Input/Output Modules" VendorId="547" ImageId="1011"/>
+							<ModuleClass Class="TB20 Analog In" Name="Analog Input Modules" VendorId="547" ImageId="1012"/>
+							<ModuleClass Class="TB20 Analog Out" Name="Analog Output Modules" VendorId="547" ImageId="1013"/>
+							<ModuleClass Class="TB20 Function" Name="Function Modules" VendorId="547" ImageId="1014"/>
+							<ModuleClass Class="TB20 Communication" Name="Communication Modules" VendorId="547" ImageId="1015"/>
+							<ModuleClass Class="TB20 System" Name="System Modules" VendorId="547" ImageId="1016"/>
+						</Slot>
+						<ModulePdoGroup>01000017001b00000000000000000000</ModulePdoGroup>
+					</EtherCAT>
+				</Box>
+				<EtherCAT/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500820000403}" Id="#x02030010"/>
+		<MappingInfo Identifier="{08502002-0020-0304-0020-500820000403}" Id="#x02030020" Watchdog="04000000040000000400000004000000"/>
+		<OwnerA Name="TIPC^Bohrmodell_SK1^Bohrmodell_SK1 Instance">
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^-KF2 (EL1809)">
+				<Link VarA="PlcTask Inputs^GVL_A1.GL1_B1_BG1" VarB="Channel 9^GL1_B1_BG1"/>
+				<Link VarA="PlcTask Inputs^GVL_A1.GL2_B2_BG1" VarB="Channel 10^GL2_B2_BG1"/>
+				<Link VarA="PlcTask Inputs^GVL_A1.GL3_B3_BG1" VarB="Channel 11^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_A1.TM1_B2_BG1" VarB="Channel 12^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_A1.TM1_B2_BG2" VarB="Channel 13^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_A1.GL1_B1_BQ1" VarB="Channel 16^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_A1.S01_C2_SF1" VarB="Channel 14^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_A1.S01_C3_SF1" VarB="Channel 15^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL1809)">
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF1" VarB="Channel 1^S01_C1_SF1"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF10" VarB="Channel 10^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF11" VarB="Channel 11^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF12" VarB="Channel 12^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF13" VarB="Channel 13^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF14" VarB="Channel 14^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF16" VarB="Channel 16^Input"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF2" VarB="Channel 2^S01_C1_SF2"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF3" VarB="Channel 3^GVL_C1.S01_C1_SF3"/>
+				<Link VarA="PlcTask Inputs^GVL_C1.S01_C1_SF9" VarB="Channel 9^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF15" VarB="Channel 15^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF4" VarB="Channel 4^GVL_C1.S01_C1_SF4"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF5" VarB="Channel 5^GVL_C1.S01_C1_SF5"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF6" VarB="Channel 6^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF7" VarB="Channel 7^Input"/>
+				<Link VarA="TaktGen Inputs^GVL_C1.S01_C1_SF8" VarB="Channel 8^Input"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL2809)">
+				<Link VarA="PlcTask Outputs^GVL_A1.GL1_B1_MA1" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.GL2_B2_MA1" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.GL3_B3_MA1" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.S01_C3_PF1" VarB="Channel 11^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.S01_C3_PF2" VarB="Channel 12^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.S01_C3_PF3" VarB="Channel 13^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.S01_C3_PJ1" VarB="Channel 15^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.TM1_B2_MA1" VarB="Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.TM1_B2_MA2_1" VarB="Channel 5^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_A1.TM1_B2_MA2_2" VarB="Channel 6^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_A1.S01_C2_PF1" VarB="Channel 9^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_A1.S01_C2_PF2" VarB="Channel 10^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_A1.S01_C3_PF4" VarB="Channel 14^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 2 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL2809)">
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF1" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF10" VarB="Channel 10^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF11" VarB="Channel 11^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF15" VarB="Channel 15^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF16" VarB="Channel 16^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF2" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF3" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF4" VarB="Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF5" VarB="Channel 5^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF6" VarB="Channel 6^Output"/>
+				<Link VarA="PlcTask Outputs^GVL_C1.S01_C1_PF9" VarB="Channel 9^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_C1.S01_C1_PF12" VarB="Channel 12^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_C1.S01_C1_PF13" VarB="Channel 13^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_C1.S01_C1_PF14" VarB="Channel 14^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_C1.S01_C1_PF7" VarB="Channel 7^Output"/>
+				<Link VarA="TaktGen Outputs^GVL_C1.S01_C1_PF8" VarB="Channel 8^Output"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>

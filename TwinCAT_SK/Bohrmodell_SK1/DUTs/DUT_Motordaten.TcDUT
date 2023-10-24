@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <DUT Name="DUT_Motordaten" Id="{c96f0ee0-4571-4f6a-9763-fd622c5e3e6a}">
+    <Declaration><![CDATA[TYPE DUT_Motordaten :
+STRUCT
+	Laufzeit : INT;
+	Einschaltvorgange : UINT;
+	Motorleistung : REAL;
+	Motorstrom : REAL;
+	Drehzahl : INT;
+	ResetDisable : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
