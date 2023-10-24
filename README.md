@@ -1,2 +1,2 @@
 # Tc_TrafficLight
-A Sample Project with Basic programming
+Ein Beispielprojekt um eine kurze auffrischung und Eifnhrung in Struktueirten Text zu geben. Unter der Verwendung von Enumerationen.
